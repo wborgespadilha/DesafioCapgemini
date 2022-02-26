@@ -11,15 +11,15 @@ char matriz[2048][256];
 
 int main(int argc, char *argv[]) 
 {
-	setlocale(LC_ALL, "Portuguese");//habilita a acentuaÁ„o para o portuguÍs
+	setlocale(LC_ALL, "Portuguese");//habilita a acentua√ß√£o para o portugu√™s
 	do
 	{
-		printf("Insira 1 para teste manual, 2 para teste unit·rio ou 3 para sair.\n");
+		printf("Insira 1 para teste manual, 2 para teste unit√°rio ou 3 para sair.\n");
 		scanf("%d",&opcao);
 		
 		if(opcao == 1)//TESTE MANUAL
 		{
-			printf("Insira um n˙mero inteiro\n");
+			printf("Insira um n√∫mero inteiro\n");
 			scanf("%d",&i);
 			
 			DesenharEscada(i);
@@ -32,15 +32,15 @@ int main(int argc, char *argv[])
 			funcao = VerificarSenha(senha);
 			if(funcao == 0)
 			{
-				printf("N„o È necess·rio adicionar mais caracteres na senha\n");
+				printf("N√£o √© necess√°rio adicionar mais caracteres na senha\n");
 			}
 			else if(funcao == 1)
 			{
-				printf("… necess·rio adicionar mais 1 caractere na senha\n");
+				printf("√â necess√°rio adicionar mais 1 caractere na senha\n");
 			}
 			else
 			{
-				printf("… necess·rio adicionar mais %d caracteres na senha\n",funcao);
+				printf("√â necess√°rio adicionar mais %d caracteres na senha\n",funcao);
 			}
 	
 			printf("\n");
@@ -51,15 +51,15 @@ int main(int argc, char *argv[])
 			funcao = VerificarAnagramasPares(palavra);
 			if (funcao == 0)
 			{
-				printf("A palavra n„o possui pares de substrings que s„o anagramas\n");
+				printf("A palavra n√£o possui pares de substrings que s√£o anagramas\n");
 			}
 			else if(funcao == 1)
 			{
-				printf("A palavra possui 1 par de substrings que s„o anagramas\n");
+				printf("A palavra possui 1 par de substrings que s√£o anagramas\n");
 			}
 			else
 			{
-				printf("A palavra possui %d pares de substrings que s„o anagramas\n",funcao);
+				printf("A palavra possui %d pares de substrings que s√£o anagramas\n",funcao);
 			}
 	
 			printf("\n\n");
@@ -69,13 +69,13 @@ int main(int argc, char *argv[])
 			printf(" ");
 			
 			srand ( time(NULL) );//seta a seed
-			i = rand() % 60;//sorteia o n˙mero
+			i = rand() % 60;//sorteia o n√∫mero
 			
-			printf("N˙mero sorteado: %i\n",i);
+			printf("N√∫mero sorteado: %i\n",i);
 			
 			DesenharEscada(i);
 			
-			char caracteres[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*()^-+";//bug conhecido: as vezes a senha È gerada com um caractere especial que n„o est· aqui. faz sentido? n„o.
+			char caracteres[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%&*()^-+";//bug conhecido: as vezes a senha √© gerada com um caractere especial que n√£o est√° aqui. faz sentido? n√£o.
 			
 			srand( time(NULL) );//seta a seed
 			int tamanho = rand() % 10;//sorteia o numero
@@ -98,18 +98,18 @@ int main(int argc, char *argv[])
 			funcao = VerificarSenha(senha);
 			if(funcao == 0)
 			{
-				printf("N„o È necess·rio adicionar mais caracteres na senha\n\n");
+				printf("N√£o √© necess√°rio adicionar mais caracteres na senha\n\n");
 			}
 			else if(funcao == 1)
 			{
-				printf("… necess·rio adicionar mais 1 caractere na senha\n\n");
+				printf("√â necess√°rio adicionar mais 1 caractere na senha\n\n");
 			}
 			else
 			{
-				printf("… necess·rio adicionar mais %d caracteres na senha\n\n",funcao);
+				printf("√â necess√°rio adicionar mais %d caracteres na senha\n\n",funcao);
 			}
 			
-			memset(senha, 0, strlen(senha));//limpa a senha para caso a prÛxima execuÁ„o tambÈm seja teste unit·rio
+			memset(senha, 0, strlen(senha));//limpa a senha para caso a pr√≥xima execu√ß√£o tamb√©m seja teste unit√°rio
 			
 			
 			char caracteres2[26] = "abcdefghijklmnopqrstuvwxyz";
@@ -132,18 +132,18 @@ int main(int argc, char *argv[])
 			funcao = VerificarAnagramasPares(palavra);
 			if (funcao == 0)
 			{
-				printf("A palavra n„o possui pares de substrings que s„o anagramas\n");
+				printf("A palavra n√£o possui pares de substrings que s√£o anagramas\n");
 			}
 			else if(funcao == 1)
 			{
-				printf("A palavra possui 1 par de substrings que s„o anagramas\n");
+				printf("A palavra possui 1 par de substrings que s√£o anagramas\n");
 			}
 			else
 			{
-				printf("A palavra possui %d pares de substrings que s„o anagramas\n",funcao);
+				printf("A palavra possui %d pares de substrings que s√£o anagramas\n",funcao);
 			}
 			
-			memset(palavra, 0, strlen(palavra));//limpa a palavra para caso a prÛxima execuÁ„o tambÈm seja teste unit·rio
+			memset(palavra, 0, strlen(palavra));//limpa a palavra para caso a pr√≥xima execu√ß√£o tamb√©m seja teste unit√°rio
 			
 			
 			printf("\n\n");
@@ -161,13 +161,13 @@ int DesenharEscada(int i)
 	
 	printf("\n");
 	
-	for(x = 1; x <= i; x++)//percorre as linhas atÈ que o n˙mero da linha seja igual ao n˙mero digitado
+	for(x = 1; x <= i; x++)//percorre as linhas at√© que o n√∫mero da linha seja igual ao n√∫mero digitado
 	{
-		for(y = 0; y < (i-x); y++)//printa os espaÁos igual ao numero digitado menos o n˙mero da linha atual
+		for(y = 0; y < (i-x); y++)//printa os espa√ßos igual ao numero digitado menos o n√∫mero da linha atual
 		{
 			printf(" ");
 		}
-		for(z = 1; z <= x; z++)//printa a quantidade de  * igual ao n˙mero da linha
+		for(z = 1; z <= x; z++)//printa a quantidade de  * igual ao n√∫mero da linha
 		{
 			printf("*");
 		}
@@ -185,18 +185,18 @@ int VerificarSenha(char senha[])
 	
 	g = VerificarMaisculas(senha);
 	
-	printf("Mai˙sculos: %i\n",g);
+	printf("Mai√∫sculos: %i\n",g);
 	
-	if (g == 0)//primeira verificaÁ„o, se h· letras mai˙sculas
+	if (g == 0)//primeira verifica√ß√£o, se h√° letras mai√∫sculas
 	{
 		f ++;
 	}
 	
 	g = VerificarMinusculas(senha);
 
-	printf("Min˙sculos: %i\n",g);
+	printf("Min√∫sculos: %i\n",g);
 
-	if (g == 0)//verifica se h· letras min˙sculas
+	if (g == 0)//verifica se h√° letras min√∫sculas
 	{
 		f ++;
 	}
@@ -205,25 +205,25 @@ int VerificarSenha(char senha[])
 	
 	printf("CaracteresEspeciais: %i\n",g);
 	
-	if (g == 0)//verifica se h· caracteres especiais
+	if (g == 0)//verifica se h√° caracteres especiais
 	{
 		f ++;
 	}
 	
 	g = VerificarDigitos(senha);
 	
-	printf("DÌgitos: %i\n",g);
+	printf("D√≠gitos: %i\n",g);
 	
-	if (g == 0)//verifica se h· digitos
+	if (g == 0)//verifica se h√° digitos
 	{
 		f ++;
 	}
 	
-	g = ContarTamanho(senha);
+	g = strlen(senha);
 	
 	printf("Tamanho da senha: %i\n\n",g);
 	
-	while( (g + f) < 6)//se o n˙mero de caracteres mais o numero de caracteres a ser adicionados n„o bater 6, adicionar 1 no a ser adicionado
+	while( (g + f) < 6)//se o n√∫mero de caracteres mais o numero de caracteres a ser adicionados n√£o bater 6, adicionar 1 no a ser adicionado
 	{
 		f++;
 	}
@@ -232,28 +232,14 @@ int VerificarSenha(char senha[])
 	return f;
 }
 
-int ContarTamanho(char senha[])
-{
-	int k = 0;
-	int j = 0;
-	
-	while (senha[j] != 0)//enquanto o caractere n„o for nulo, soma e avanÁa
-	{
-		j ++;
-		k ++;
-	}
-	
-	return k;//retorna o valor de caracteres
-}
-
 int VerificarMaisculas(char senha[])
 {
 	int k = 0;
 	int j;
 	
-	for(j = 0; j < strlen(senha); j++)// percorre toda a extens„o do array
+	for(j = 0; j < strlen(senha); j++)// percorre toda a extens√£o do array
 	{
-		if (senha[j] == 'A')//verificaÁ„o termo a termo
+		if (senha[j] == 'A')//verifica√ß√£o termo a termo
 		{
 			k ++;
 		}
@@ -358,7 +344,7 @@ int VerificarMaisculas(char senha[])
 			k ++;
 		}
 	}
-	return k;//retorna o n˙mero de letras mai˙sculas
+	return k;//retorna o n√∫mero de letras mai√∫sculas
 }
 
 int VerificarMinusculas(char senha[])
@@ -366,9 +352,9 @@ int VerificarMinusculas(char senha[])
 	int k = 0;
 	int j;
 	
-	for(j = 0; j < sizeof(senha); j++)// percorre toda a extens„o do array
+	for(j = 0; j < sizeof(senha); j++)// percorre toda a extens√£o do array
 	{
-		if (senha[j] == 'a')//verificaÁ„o termo a termo
+		if (senha[j] == 'a')//verifica√ß√£o termo a termo
 		{
 			k ++;
 		}
@@ -473,7 +459,7 @@ int VerificarMinusculas(char senha[])
 			k ++;
 		}
 	}
-	return k;//retorna o n˙mero de letras min˙sculas
+	return k;//retorna o n√∫mero de letras min√∫sculas
 }
 
 int VerificarDigitos(char senha[])
@@ -481,9 +467,9 @@ int VerificarDigitos(char senha[])
 	int k = 0;
 	int j;
 	
-	for(j = 0; j < sizeof(senha); j++)// percorre toda a extens„o do array
+	for(j = 0; j < sizeof(senha); j++)// percorre toda a extens√£o do array
 	{
-		if (senha[j] == '0')//verificaÁ„o termo a termo
+		if (senha[j] == '0')//verifica√ß√£o termo a termo
 		{
 			k ++;
 		}
@@ -524,7 +510,7 @@ int VerificarDigitos(char senha[])
 			k ++;
 		}
 	}
-	return k;//retorna o n˙mero de dÌgitos
+	return k;//retorna o n√∫mero de d√≠gitos
 }
 
 int VerificarCaracteres(char senha[])
@@ -532,9 +518,9 @@ int VerificarCaracteres(char senha[])
 	int k = 0;
 	int j;
 	
-	for(j = 0; j < sizeof(senha); j++)// percorre toda a extens„o do array
+	for(j = 0; j < sizeof(senha); j++)// percorre toda a extens√£o do array
 	{
-		if (senha[j] == '!')//verificaÁ„o termo a termo
+		if (senha[j] == '!')//verifica√ß√£o termo a termo
 		{
 			k ++;
 		}
@@ -583,7 +569,7 @@ int VerificarCaracteres(char senha[])
 			k ++;
 		}
 	}
-	return k;//retorna o n˙mero de caracteres especiais
+	return k;//retorna o n√∫mero de caracteres especiais
 }
 
 int VerificarAnagramasPares(char palavra[])
@@ -596,21 +582,21 @@ int VerificarAnagramasPares(char palavra[])
 	//printf("len: %i\n",len); //debug
 
 	//PRIMEIRA METADE
-	for(x = 0; x <= len; x++)//pegar· substrings cada vez maiores, atÈ o limite de tamaho = metade da palavra arredendado pra baixo
+	for(x = 0; x <= len; x++)//pegar√° substrings cada vez maiores, at√© o limite de tamaho = metade da palavra arredendado pra baixo
 	{
 		//printf("-----x: %d------\n",x); //debug
-		for(i = 0; i < strlen(palavra); i++)//verificar· o conteudo de cada string
+		for(i = 0; i < strlen(palavra); i++)//verificar√° o conteudo de cada string
 		{
 			memcpy(str,&palavra[i],x + 1);//pega a substring
 			//printf("i(%d): %s\n",x+1,str); //debug
 				
-			for(j = 0; j < strlen(palavra); j++)//com o conte˙do das outras strings
+			for(j = 0; j < strlen(palavra); j++)//com o conte√∫do das outras strings
 			{
 					
 				memcpy(str2,&palavra[j],x + 1);//x + i seleciona o tamanho da substring
 				//printf(" j: %s\n",str2); //debug
 					
-				if(i != j)//exceto na mesma posiÁ„o
+				if(i != j)//exceto na mesma posi√ß√£o
 				{
 					if(VerificarAnagrama(str,str2) == 1)
 					{
@@ -631,7 +617,7 @@ int VerificarAnagrama(char str[], char str2[])
 	int i,j;
 	char aux;
 
-	//bubble sort no conte˙do das strings 
+	//bubble sort no conte√∫do das strings 
 	
 	for(i = 0; i < strlen(str); i ++)
 	{
@@ -659,7 +645,7 @@ int VerificarAnagrama(char str[], char str2[])
 			}
 		}
 	}
-	//como est„o perfeitamente ordenadas, basta comparar diretamente
+	//como est√£o perfeitamente ordenadas, basta comparar diretamente
 	if(strcmp(str,str2) == 0)
 	{
 		return 1;
@@ -682,7 +668,7 @@ int ProcessarPares()
 		if(strlen(vetor)!=0)
 		{
 			//vetor[x] = BubbleSort(vetor[256]);
-			//bubble sort no conte˙do da matriz
+			//bubble sort no conte√∫do da matriz
 			
 			for(i = 0; i < 256; i ++)
 			{
@@ -708,14 +694,14 @@ int ProcessarPares()
 		for(i = 0; i < 2048; i ++)//e compara com todas as outras
 		{
 			strcpy(vetor2,matriz[i]);
-			if((strlen(vetor)!=0) && (strlen(vetor2)!=0))//se n„o forem string vazias
+			if((strlen(vetor)!=0) && (strlen(vetor2)!=0))//se n√£o forem string vazias
 			{
-				if(x != i)//e n„o forem iguais continua
+				if(x != i)//e n√£o forem iguais continua
 				{
 					if(strcmp(vetor,vetor2) == 1)
 					{
 						total++;
-						memset(matriz[x],0,256);//remove o par para n„o ler eles novamente
+						memset(matriz[x],0,256);//remove o par para n√£o ler eles novamente
 						memset(matriz[i],0,256);
 					}
 				}
