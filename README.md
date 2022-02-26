@@ -1,6 +1,8 @@
 # DesafioCapgemini
 Desafio de programação Academia Capgemini 2022
 
+https://docs.google.com/document/d/1fAzE01t6hEyg8JrbRo7vOA3K2W-NYisF/edit
+
 Este código foi integralmente escrito em C, é uma aplicação de console e utiliza as includes stdio.h, stdlib.h, string.h e locale.h.
 Dentro das três questões requisitadas, a primeira é resolvida por um procedimento, DesenharEscada. 
 
